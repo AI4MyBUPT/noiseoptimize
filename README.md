@@ -5,12 +5,14 @@ Artiffcial neural network (ANN) has been widely used in automation. However, the
 ## Citation
 
 If you find generalized likelihood ratio method useful in your research, please consider citing:
+
       @article{Li2024noiseoptimize,
         Author = {Li Xiao, Zeliang Zhang, Yijie Peng},
         Title = {Noise optimization in artificial neural networks},
         Journal = {IEEE Transactions on Automation Science and Engineering},
         Year = {2024}
     } 
+    
     @article{peng2022stochastic,
         Author = {Yijie Peng, Li Xiao, Bernd Heidergott,Jeff L. Hong, Henry Lam},
         Title = {A new likelihood ratio method for training artificial neural networks},
