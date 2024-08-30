@@ -1,28 +1,24 @@
-# Noise Optimization For Aritificial Neural Network   
+# Noise Optimization In Aritificial Neural Network   
 Code for the implementation of "Noise Optimization For Neural Network"  
 ## Abstract  
-Adding noises to artificial neural network(ANN) has been shown to be able to  improve robustness in previous work.   
-In this work, we propose a new technique to compute the pathwise stochastic gradient estimate with respect to the standard deviation of the Gaussian noise added to each neuron of the ANN.   
-By our  proposed technique, the gradient estimate with respect to noise levels is a byproduct of the backpropagation algorithm for estimating gradient with respect to synaptic weights in ANN.  
-Thus, the noise level for each neuron can be optimized simultaneously in the processing of training the synaptic weights at nearly no extra computational cost.   
-In numerical experiments, our proposed method can achieve significant performance improvement on robustness of several popular ANN structures under both black box and white box attacks tested in various computer vision datasets.   
+Artiffcial neural network (ANN) has been widely used in automation. However, the vulnerability of ANN under certain attacks poses a security threat to critical automation systems. Previous research has shown that adding noise to ANNs can enhance robustness. Nonetheless, striking a balance between robustness and task performance remains challenging, as excessive noise improves robustness but hampers performance, while low noise offers minor robustness improvement. In this work, we propose to learn the distribution of optimal injected noise, which improves the robustness as well as maintains the performance. Speciffcally, we compute the pathwise stochastic gradient estimate with respect to the standard deviation of the Gaussian noise added to each neuron of the ANN and optimize both the noise distribution and model parameters during training with negligible additional computational cost. In numerical experiments, our proposed method can achieve signiffcant performance improvement on the robustness of several popular ANN structures under both black box and white box attacks. We also evaluate the proposed technique on two automation tasks: the classic reinforcement learning task of the cart pole game and a fault detection problem. Our results showed that the proposed technique outperforms a conventional neural network in terms of performance, robustness, and visual explainability.
 ## Citation
 
 If you find generalized likelihood ratio method useful in your research, please consider citing:
-
-    @article{peng2020stochastic,
+      @article{Li2024noiseoptimize,
+        Author = {Li Xiao, Zeliang Zhang, Yijie Peng},
+        Title = {Noise optimization in artificial neural networks},
+        Journal = {IEEE Transactions on Automation Science and Engineering},
+        Year = {2024}
+    } 
+    
+    @article{peng2022stochastic,
         Author = {Yijie Peng, Li Xiao, Bernd Heidergott,Jeff L. Hong, Henry Lam},
-        Title = {Stochastic Gradient Estimation for Artificial Neural Networks},
-        Journal = {Preprint with DOI: 10.2139/ssrn.3318847},
-        Year = {2019}
+        Title = {A new likelihood ratio method for training artificial neural networks},
+        Journal = {INFORMS Journal on Computing},
+        Year = {2022}
     }
     
-      @article{Li2021noiseoptimize,
-        Author = {Li Xiao, Zeliang Zhang, Yijie Peng},
-        Title = {Noise Optimization For Aritificial Neural Network},
-        Journal = {Submit to ICML},
-        Year = {2021}
-    } 
 ## Running Environment  
 python 3.7   
 pytorch 1.6.0  
