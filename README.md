@@ -1,5 +1,5 @@
 # Noise Optimization In Aritificial Neural Network   
-Code for the implementation of "Noise Optimization For Neural Network"  
+Code for the implementation of "Noise Optimization in Artificial Neural Networks"  
 ## Abstract  
 Artiffcial neural network (ANN) has been widely used in automation. However, the vulnerability of ANN under certain attacks poses a security threat to critical automation systems. Previous research has shown that adding noise to ANNs can enhance robustness. Nonetheless, striking a balance between robustness and task performance remains challenging, as excessive noise improves robustness but hampers performance, while low noise offers minor robustness improvement. In this work, we propose to learn the distribution of optimal injected noise, which improves the robustness as well as maintains the performance. Speciffcally, we compute the pathwise stochastic gradient estimate with respect to the standard deviation of the Gaussian noise added to each neuron of the ANN and optimize both the noise distribution and model parameters during training with negligible additional computational cost. In numerical experiments, our proposed method can achieve signiffcant performance improvement on the robustness of several popular ANN structures under both black box and white box attacks. We also evaluate the proposed technique on two automation tasks: the classic reinforcement learning task of the cart pole game and a fault detection problem. Our results showed that the proposed technique outperforms a conventional neural network in terms of performance, robustness, and visual explainability.
 ## Citation
@@ -11,7 +11,6 @@ If you find generalized likelihood ratio method useful in your research, please 
         Journal = {IEEE Transactions on Automation Science and Engineering},
         Year = {2024}
     } 
-    
     @article{peng2022stochastic,
         Author = {Yijie Peng, Li Xiao, Bernd Heidergott,Jeff L. Hong, Henry Lam},
         Title = {A new likelihood ratio method for training artificial neural networks},
